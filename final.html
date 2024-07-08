@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Persian Books</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        to right,
+        rgb(182, 244, 146),
+        rgb(51, 139, 147)
+      );
+    }
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      border: 1.5px solid black;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      border-radius: 15px;
+      padding: 10px 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    footer a {
+      color: rgb(72, 68, 68);
+      text-decoration: none;
+    }
+
+    .theme-button {
+      font-size: 15px;
+      background: black;
+      color: white;
+      padding: 8px 10px;
+    }
+
+    .theme-button:hover {
+      color: black;
+      background: white;
+    }
+
+    .intro-pic {
+      border-radius: 10px;
+      transition: all 150ms ease-in-out;
+    }
+
+    .intro-pic:hover {
+      filter: contrast(80%);
+      transform: scale(1.1);
+    }
+
+    .grid {
+      margin: 15px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .dark {
+      background: linear-gradient(
+        109.6deg,
+        rgb(0, 0, 0) 11.2%,
+        rgb(11, 132, 145) 91.1%
+      );
+      color: white;
+    }
+
+    .dark .container {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+  <body>
+    <h1>Mozhdeh Marvi</h1>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Best Persian Books</h1>
+      <h2>My favorite hobby is reading!</h2>
+      <a
+        href="https://www.tappersia.com/10-top-iranian-books-you-shouldnt-miss-reading/"
+      >
+        <img
+          src="https://www.tappersia.com/wp-content/uploads/2020/01/Books-2.jpg"
+          alt=""
+          class="intro-pic"
+      /></a>
+      <div class="grid">
+        <img
+          src="https://www.tappersia.com/wp-content/uploads/2020/01/Her-Eyes.jpg.webp"
+          alt=""
+        />
+        <img
+          src="https://www.tappersia.com/wp-content/uploads/2020/01/I-Will-Turn-off-the-Lights.jpg.webp"
+          alt=""
+        />
+        <img
+          src="https://www.tappersia.com/wp-content/uploads/2020/01/Pigs-Bone.jpg"
+          alt=""
+        />
+        <img
+          src="https://www.tappersia.com/wp-content/uploads/2020/01/The-Blind-Owl-2.jpg"
+          alt=""
+        />
+      </div>
+      <p>
+        Great books have this magical power to take you to another world. All
+        you have to do is to sit in a comfortable place, pick up your paper
+        book, your phone, or tablet and let go of yourself in a new world built
+        upon words and imagination. Books allow you to imagine a culture,
+        happiness, sadness, or even the misery of a character. Iran has a very
+        rich literature, starting from the poems of Hafez, Ferdowsi, Rumi, and
+        Khayam, to the modern literature novels of Sadegh Hedayat and Mahmoud
+        Dowlatabadi. We have proudly made a list of top 10 Iranian books you
+        should read if you are interested in Iranian literature as well as its
+        history and culture. However, the real Iranian culture is hidden in
+        these book pages.
+      </p>
+    </div>
+    <button>see books!</button>
+    <footer>Coded with 💚 by <a href="">mozhdeh marvi</a></footer>
+  </body>
+
+  <script>
+    function changeTheme() {
+      let body = document.querySelector("body");
+
+      if (body.classList.contains("dark")) {
+        body.classList.remove("dark");
+      } else {
+        body.classList.add("dark");
+      }
+    }
+
+    let themeButton = document.querySelector(".theme-button");
+    themeButton.addEventListener("click", changeTheme);
+  </script>
+</html>
